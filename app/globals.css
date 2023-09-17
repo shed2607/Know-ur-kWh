@@ -2,26 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+.inputs{
+  
+  @apply border-4 px-4 py-2 rounded-xl border-gray-700;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.inputs:focus{
+  @apply border-4 px-4 py-2 rounded-xl border-indigo-600;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+body{
+  background-image: url('./assets/images/bg.jpg'); /* Adjust the path to your image */
+  background-size: cover; /* Make sure the image covers the entire body */
+  background-position: center; /* Center the image horizontally and vertically */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-color: rgba(0,0,0,0.9);
+}
+
+.main{
+  @apply bg-white
 }
