@@ -131,10 +131,10 @@ export default function Home() {
               </div>
             </div>
           </section>
-          <section>
+          <section className="flex  items-end justify-center px-10 py-8 mt-8">
             <button
               type="submit"
-              className="bg-blue-500 text-white p-2 rounded"
+              className="bg-blue-500 text-white p-2 rounded text-xl"
             >
               Calculate
             </button>
